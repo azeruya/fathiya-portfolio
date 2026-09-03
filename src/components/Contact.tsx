@@ -39,7 +39,7 @@ export default function Contact() {
             </h2>
 
             <p className="mt-6 max-w-xl text-base leading-7 text-zinc-600 dark:text-zinc-400">
-              I&apos;m open to software engineering opportunities,
+              I'm open to software engineering opportunities,
               collaborations, and interesting projects. Feel free to reach out.
             </p>
           </div>

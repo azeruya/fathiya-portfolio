@@ -100,7 +100,7 @@ export default function Projects() {
           </h2>
 
           <p className="mt-6 max-w-2xl text-base leading-7 text-zinc-600 dark:text-zinc-400">
-            A selection of applications I&apos;ve built around real workflows,
+            A selection of applications I've built around real workflows,
             operational needs, and user problems.
           </p>
         </div>

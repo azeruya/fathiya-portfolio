@@ -62,7 +62,7 @@ export default function Experience() {
           </p>
 
           <h2 className="max-w-3xl text-4xl font-semibold tracking-[-0.04em] text-zinc-950 dark:text-zinc-50 sm:text-5xl">
-            where I&apos;ve learned
+            where I've learned
             <br />
             by building.
           </h2>

@@ -14,7 +14,8 @@ const skillGroups = [
       "Building responsive, component-driven interfaces with modern JavaScript frameworks.",
     skills: [
       "React",
-      "Vue 3",
+      "Next.js",
+      "Vue",
       "TypeScript",
       "JavaScript",
       "Tailwind CSS",
@@ -95,7 +96,7 @@ export default function Skills() {
           </h2>
 
           <p className="mt-6 max-w-2xl text-base leading-7 text-zinc-600 dark:text-zinc-400">
-            Technologies and practices I&apos;ve used across full-stack
+            Technologies and practices I've used across full-stack
             applications, internal systems, and product development.
           </p>
         </div>
