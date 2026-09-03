@@ -47,7 +47,7 @@ export default function Contact() {
           {/* Contact links */}
           <div className="flex flex-col gap-3 md:items-end">
             <a
-              href="mailto:fathiya.azelya@gmail.com"
+              href="mailto:fathiya.azel@gmail.com"
               className="
                 group flex w-full items-center justify-between
                 rounded-2xl

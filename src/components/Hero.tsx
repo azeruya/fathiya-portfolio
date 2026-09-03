@@ -59,7 +59,7 @@ export default function Hero() {
                         </a>
 
                         <a
-                        href="mailto:fathiya.azelya@gmail.com"
+                        href="mailto:fathiya.azel@gmail.com"
                         aria-label="Email"
                         className="
                             flex h-10 w-10 items-center justify-center

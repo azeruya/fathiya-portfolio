@@ -68,7 +68,7 @@ export default function Navbar() {
             sm:text-lg
           "
         >
-          fathiya&apos;s portfolio.
+          fathiya's portfolio.
         </a>
 
         <div className="flex items-center gap-2">
