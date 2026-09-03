@@ -43,7 +43,6 @@ const projects = [
         "Ant Design",
       ],
       image: "/autoletter-project.png",
-      link: "#",
       repos: [
         {
           label: "GitHub",

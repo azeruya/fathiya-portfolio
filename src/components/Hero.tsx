@@ -128,9 +128,9 @@ export default function Hero() {
                                 saturate-[0.82]
                                 contrast-[0.96]
 
-                                dark:brightness-[0.72]
-                                dark:saturate-[0.75]
-                                dark:contrast-[0.95]
+                                dark:brightness-[0.80]
+                                dark:saturate-[0.80]
+                                dark:contrast-[0.98]
 
                                 transition-[filter]
                                 duration-300
