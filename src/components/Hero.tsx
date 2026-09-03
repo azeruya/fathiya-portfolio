@@ -1,4 +1,4 @@
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Download } from "lucide-react";
 
 export default function Hero() {
     return (
@@ -59,16 +59,56 @@ export default function Hero() {
                         </a>
 
                         <a
-                            href="mailto:fathiya.azelya@gmail.com"
-                            aria-label="Email"
-                            className="flex h-10 w-10 items-center justify-center rounded-full border border-zinc-200 transition hover:border-zinc-300 hover:bg-zinc-50"
+                        href="mailto:fathiya.azelya@gmail.com"
+                        aria-label="Email"
+                        className="
+                            flex h-10 w-10 items-center justify-center
+                            rounded-full
+                            border border-zinc-200
+                            transition
+                            hover:border-zinc-300
+                            hover:bg-zinc-50
+
+                        "
                         >
-                            <img
-                                src="/email-2.svg"
-                                alt=""
-                                className="h-5 w-5"
-                            />
+                        {/* Light mode */}
+                        <img
+                            src="/email-2.svg"
+                            alt=""
+                            className="h-5 w-5 dark:hidden"
+                        />
+
+                        {/* Dark mode */}
+                        <img
+                            src="/email-3.svg"
+                            alt=""
+                            className="hidden h-5 w-5 dark:block"
+                        />
                         </a>
+
+                        {/* Resume */}
+                        <a
+                            href="/Fathiya-Azelya-Resume.pdf"
+                            download
+                            className="
+                            ml-1 inline-flex h-10 items-center gap-2
+                            rounded-full
+                            bg-zinc-950
+                            px-4
+                            text-sm font-medium
+                            text-white
+                            transition
+                            hover:bg-zinc-800
+
+                            dark:bg-zinc-50
+                            dark:text-zinc-950
+                            dark:hover:bg-zinc-200
+                            "
+                        >
+                            <Download size={14} />
+                            Résumé
+                        </a>
+
                     </div>
                 </div>
 

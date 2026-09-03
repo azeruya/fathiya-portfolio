@@ -14,7 +14,7 @@ const projects = [
         "ApexCharts",
         "DomPDF",
       ],
-      image: "/vulcan-project.png",
+      image: "/vulcan-project-2.png",
       link: "https://vulcan-auto.vercel.app/login",
       repos: [
         {
