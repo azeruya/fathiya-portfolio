@@ -1,8 +1,10 @@
+import { ChevronDown } from "lucide-react";
+
 export default function Hero() {
     return (
         <section
             id="about"
-            className="flex min-h-screen items-center pt-20"
+            className="relative flex min-h-[90vh] items-center pt-20"
         >
             <div className="mx-auto grid w-full max-w-6xl items-center gap-10 px-6 md:grid-cols-[1.15fr_0.85fr] md:gap-14">
 
@@ -106,6 +108,27 @@ export default function Hero() {
                     </div>
                 </div>
             </div>
+
+            <a
+            href="#projects"
+            className="
+            absolute bottom-7 left-1/2
+            flex -translate-x-1/2 flex-col items-center gap-1.5
+            text-zinc-400
+            transition-colors
+            hover:text-zinc-700
+
+            dark:text-zinc-400
+            dark:hover:text-zinc-300
+            "
+            aria-label="Scroll to projects"
+            >
+            <span className="text-[10px] font-medium uppercase tracking-[0.22em]">
+                scroll
+            </span>
+
+            <ChevronDown size={16} />
+            </a>
         </section>
     );
 }

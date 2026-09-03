@@ -1,31 +1,81 @@
+import { ExternalLink } from "lucide-react";
+
 const projects = [
     {
-        number: "01",
-        title: "Workshop Management System",
-        subtitle: "developed for Vulcan Auto Service",
-        description: "A full-stack web management system built to streamline day-to-day automotive workshop operations, from customer and job tracking to transactions, inventory, expenses, and financial reporting.",
-        stack: ["Vue", "Laravel", "PostgreSQL", "Supabase"],
-        image: "/vulcan-project-2.png",
-        link: "#",
+      number: "01",
+      title: "Vulcan Auto Service",
+      subtitle: "Workshop Management System",
+      description:
+        "A full-stack workshop management system that centralizes customer records, vehicle servicing, transactions, inventory, expenses, and financial reporting into a single operational platform.",
+      stack: [
+        "Vue 3",
+        "Laravel",
+        "Supabase",
+        "ApexCharts",
+        "DomPDF",
+      ],
+      image: "/vulcan-project.png",
+      link: "https://vulcan-auto.vercel.app/login",
+      repos: [
+        {
+          label: "Frontend",
+          url: "https://github.com/azeruya/cikgu-kereta-frontend",
+        },
+        {
+          label: "Backend",
+          url: "https://github.com/azeruya/cikgu-kereta-management",
+        },
+      ],
     },
     {
-        number: "02",
-        title: "Auto-Letter System",
-        subtitle: "an university administrative platform",
-        description: "An internal web application that automates student letter requests, allowing students to submit structured information while administrators manage templates, review applications, and issue documents efficiently.",
-        stack: ["React", "TypeScript", "FastAPI", "Tailwind"],
-        image: "/autoletter-project.png",
-        link: "#",
+      number: "02",
+      title: "Auto-Letter System",
+      subtitle: "Administrative Automation Platform",
+      description:
+        "A full-stack administrative platform that automates student letter requests, from dynamic form generation and request review to document creation, file management, and delivery.",
+      stack: [
+        "React",
+        "TypeScript",
+        "Python",
+        "FastAPI",
+        "SQLite",
+        "Tailwind CSS",
+        "Ant Design",
+      ],
+      image: "/autoletter-project.png",
+      link: "#",
+      repos: [
+        {
+          label: "GitHub",
+          url: "https://github.com/azeruya/auto-letter-py",
+        },
+      ],
     },
     {
-        number: "03",
-        title: "Studily",
-        subtitle: "Student Learning Platform",
-        description:
-        "A digital product designed to make studying more organized and accessible through a focused, student-friendly experience.",
-        stack: ["React", "TypeScript"],
-        image: "/studily-project.png",
-        link: "#",
+      number: "03",
+      title: "Studily",
+      subtitle: "Gamified Study & Productivity App",
+      description:
+        "A full-stack gamified productivity app combining Pomodoro study sessions, task management, study tracking, and a virtual pet system designed to reward consistent focus.",
+      stack: [
+        "Vue 3",
+        "PHP/Slim",
+        "Supabase",
+        "Tailwind CSS",
+        "Docker",
+      ],
+      image: "/studily-project.png",
+      link: "https://studily-delta.vercel.app/",
+      repos: [
+        {
+          label: "Frontend",
+          url: "https://github.com/azeruya/studily-frontend",
+        },
+        {
+          label: "Backend",
+          url: "https://github.com/azeruya/studily-backend",
+        },
+      ],
     },
 ];
 
@@ -33,12 +83,12 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="scroll-mt-24 py-24 md:py-32"
+      className="scroll-mt-24 py-16 md:py-20"
     >
       <div className="mx-auto w-full max-w-6xl px-6">
 
         {/* Section heading */}
-        <div className="mb-16 md:mb-20">
+        <div className="mb-12 md:mb-16">
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.25em] text-zinc-500 dark:text-zinc-400">
             Selected Work
           </p>
@@ -118,20 +168,71 @@ export default function Projects() {
                     ))}
                   </div>
 
-                  <a
-                    href={project.link}
-                    className="
-                      mt-8 inline-flex items-center gap-2
-                      text-sm font-medium
-                      text-zinc-950
-                      transition
-                      hover:gap-3
-                      dark:text-zinc-50
-                    "
-                  >
-                    view project
-                    <span aria-hidden="true">↗</span>
-                  </a>
+                  {/* Actions */}
+                  <div className="mt-8 flex flex-wrap items-center gap-3">
+
+                    {/* Live demo */}
+                    {project.link && (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="
+                          inline-flex items-center gap-2
+                          rounded-full
+                          bg-zinc-950
+                          px-4 py-2
+                          text-sm font-medium
+                          text-white
+                          transition
+                          hover:bg-zinc-800
+
+                          dark:bg-zinc-50
+                          dark:text-zinc-950
+                          dark:hover:bg-zinc-200
+                        "
+                      >
+                        Live demo
+                        <ExternalLink size={14} />
+                      </a>
+                    )}
+
+                    {/* GitHub repos */}
+                    {project.repos.map((repo) => (
+                      <a
+                        key={repo.url}
+                        href={repo.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="
+                          inline-flex items-center gap-2
+                          rounded-full
+                          border border-zinc-200
+                          px-4 py-2
+                          text-sm font-medium
+                          text-zinc-700
+                          transition
+                          hover:border-zinc-300
+                          hover:bg-zinc-50
+                          hover:text-zinc-950
+
+                          dark:border-zinc-800
+                          dark:text-zinc-300
+                          dark:hover:border-zinc-700
+                          dark:hover:bg-zinc-900
+                          dark:hover:text-zinc-50
+                        "
+                      >
+                        <img
+                          src="/github.svg"
+                          alt=""
+                          className="h-4 w-4 dark:invert"
+                        />
+
+                        {repo.label}
+                      </a>
+                    ))}
+                  </div>
                 </div>
               </div>
 
